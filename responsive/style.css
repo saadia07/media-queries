@@ -1,0 +1,148 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(26, 117, 159);
+    color: whi;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background-color: rgb(52, 160, 164);
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    font-weight: 500px;
+}
+.navbar a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 35px;
+
+}
+.navbar a:hover{
+    color: rgb(6, 56, 57);
+}
+@media only screen and (max-width:677px){
+    .navbar a{
+        font-size: smaller;
+        padding-right: 5px;
+    }
+    .logo{
+        font-size: smaller;
+    }
+}
+/* @media only screen and (min-width:500px)and (max-width:597){
+    .navbar a{
+        font-size: smaller;
+        color: brown;
+    }
+} */
+/* @media only screen and (max-width:468px){
+    .navbar a{
+        color: black;
+        font-size: smaller;
+    }
+
+    
+
+} */
+.content{
+    position: absolute;
+    top: 200px;
+    left: 350px;
+    max-width: 620px;
+}
+.content h1{
+    color: white;
+    font-size: 70px;
+    font-weight: 600;
+    /* line-height: 85px; */
+}
+.content h3{
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    /* line-height: 85px; */
+}
+.content p{
+    font-size: 16px;
+}
+.button{
+    position:absolute;
+    top:250px;
+    left: 100px;
+    height: 60px;
+    width: 200px;
+    font-size: larger;
+    border-radius: 20px;
+    background-color:rgb(52, 160, 164) ;
+    color: white;
+}
+.button:hover{
+    color:rgb(52, 160, 164) ;
+}
+@media (width<=855){
+    .content{
+        position: absolute;
+        top: 200px;
+        left:150px;
+        max-width: 620px;
+    }
+}
+@media only screen and (min-width:769px) and (max-width:1023px){
+    .content{
+        position: absolute;
+        top: 200px;
+        left: 250px;
+        max-width: 620px;
+    }
+
+}
+/* @media (width<=855){
+    .content{
+        position: absolute;
+        top: 200px;
+        left:150px;
+        max-width: 620px;
+    }
+} */
+@media only screen and (max-width:768px){
+    .content{
+    position: absolute;
+    top: 200px;
+    left: 150px;
+    max-width: 420px;
+    }
+    .content h1{
+        font-size:50px ;
+    }
+    
+
+}
+@media only screen and (min-width:578) and (max-width:400px){
+    .content{
+        position: absolute;
+        top: 200px;
+        left: 50px;
+        max-width: 320px;
+        }
+        .content h1{
+            font-size: smaller;
+            color: yellow;
+        }
+
+}
